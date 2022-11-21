@@ -1,0 +1,30 @@
+.adress-nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 50px;
+}
+
+.adress-nav__link {
+    display: flex;
+    color: $title-text-color;
+    fill: currentColor;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1429;
+    letter-spacing: 0.02em;
+
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-animation;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.adress-nav__icon {
+    margin-right: 10px;
+}

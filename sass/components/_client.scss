@@ -1,0 +1,31 @@
+.client-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.client-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid $social-icon;
+    border-radius: 4px;
+    color: $social-icon;
+
+    transition-property: color, border;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-animation;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+        border: 1px solid $accent-color;
+    }
+}
+
+.client-list__icon {
+    fill: currentColor;
+}
