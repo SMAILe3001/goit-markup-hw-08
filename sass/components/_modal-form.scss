@@ -1,9 +1,5 @@
-.modal-form {
-    display: flex;
-    flex-direction: column;
-}
-
 .modal-form__label {
+    display: block;
     margin-bottom: 10px;
 }
 
@@ -55,6 +51,7 @@
 }
 
 .modal-form__coment {
+    display: block;
     margin-bottom: 20px;
 }
 
@@ -84,6 +81,7 @@
 }
 
 .modal-checkbox {
+    display: block;
     margin-bottom: 30px;
 }
 
@@ -105,11 +103,11 @@
         content: '';
         display: inline-block;
         width: 16px;
-        height: 15px;
+        height: 16px;
         border: 2px solid $primary-text-color;
         border-radius: 2px;
         margin-right: 7px;
-        transform: rotate(0deg);
+        transform: rotate(90deg);
         transition: transform 250ms $timing-animation;
     }
 }
@@ -119,7 +117,7 @@
     background-size: contain;
     background-origin: border-box;
     border: 0px solid $accent-color;
-    transform: rotate(360deg);
+    transform: rotate(0deg);
 }
 
 .modal-checkbox__link {
