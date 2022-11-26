@@ -33,14 +33,16 @@
     transform: translateY(101%);
     transition: transform 250ms ease;
     background-color: $overlay-fon;
-    padding: 0px 24px;
+    padding: 24px 24px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 
     font-size: 18px;
     line-height: 1.5556;
     letter-spacing: 0.03em;
     color: $hero-color;
+    overflow: auto;
 }
 
 .projects__border {
