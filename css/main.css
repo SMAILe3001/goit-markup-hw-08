@@ -473,9 +473,8 @@ textarea {
 
 .modal-checkbox__input:checked ~ .modal-checkbox__text::before {
   background-image: url(../images/check.svg);
-  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
-  background-origin: border-box;
   border: 0px solid #2196f3;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
