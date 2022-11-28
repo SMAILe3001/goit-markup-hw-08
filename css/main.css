@@ -34,9 +34,24 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  min-width: 375px;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 /* обнулення відступів */
@@ -107,11 +122,22 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
 }
-
-.site-nav {
-  margin-left: 93px;
+@media screen and (max-width: 550px) {
+  .header-nav {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 
+.site-nav {
+  display: none;
+}
+@media screen and (min-width: 550px) {
+  .site-nav {
+    display: block;
+    margin-left: 93px;
+  }
+}
 .site-nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -155,14 +181,24 @@ textarea {
 }
 
 .adress-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: auto;
-  gap: 50px;
+  display: none;
+}
+@media screen and (min-width: 550px) {
+  .adress-nav {
+    display: block;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 900px) {
+  .adress-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 50px;
+  }
 }
 
 .adress-nav__link {
@@ -198,25 +234,43 @@ textarea {
   background-position: center;
   background-size: 1600px;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+@media screen and (min-width: 900px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero__title {
   color: #ffffff;
-  width: 696px;
+  width: 360px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3636;
+  font-size: 26px;
+  line-height: 1.6153;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 900px) {
+  .hero__title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.3636;
+  }
+}
 
 .button {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #ffffff;
   background: #2196f3;
   cursor: pointer;
@@ -224,7 +278,7 @@ textarea {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  padding: 10px 32px;
+  padding: 10px 24px;
   border: 0px;
   border-radius: 4px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -487,13 +541,14 @@ textarea {
   margin-left: 5px;
 }
 
-.feature-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
+@media screen and (min-width: 480px) {
+  .feature-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
 }
-
 .feature-list__item {
   -ms-flex-preferred-size: calc((100% - 90px) / 4);
       flex-basis: calc((100% - 90px) / 4);
