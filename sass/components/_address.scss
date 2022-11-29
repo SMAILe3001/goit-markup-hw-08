@@ -1,28 +1,27 @@
 .address {
-    margin-top: 20px;
-    font-style: normal;
-
-}  
+	margin-top: 20px;
+	font-style: normal;
+}
 
 .address__list {
-    display: flex;
-    gap: 9px;
-    flex-direction: column;
+	display: flex;
+	gap: 9px;
+	flex-direction: column;
 }
 
 .address__link {
-    color: $contact-color;
+	color: $contact-color;
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: $timing-animation;
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: $timing-animation;
 
-    &:hover,
-    &:focus {
-            color: $accent-color;
-        }
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
 }
 
 .address__link--map {
-    color: $hero-color;
+	color: $hero-color;
 }

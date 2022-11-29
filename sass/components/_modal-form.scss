@@ -96,8 +96,18 @@
 .modal-checkbox__text {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+
 	letter-spacing: 0.03em;
+
+	@media screen and (max-width: ($desktop-width - 1 )) {
+		font-size: 12px;
+		line-height: calc(14 / 12);
+		align-items: left;
+	}
+
+	@media screen and (min-width: $desktop-width) {
+		justify-content: center;
+	}
 
 	&::before {
 		content: "";

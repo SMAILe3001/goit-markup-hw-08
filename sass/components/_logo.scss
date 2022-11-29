@@ -1,17 +1,21 @@
 .logo {
-    
-    color: $accent-color;
+	color: $accent-color;
 
-    font-family: $fonts-second;
-    font-size: 26px;
-    line-height: 1.1923;
-    letter-spacing: 0.03em;
+	font-family: $fonts-second;
+	font-size: 24px;
+	line-height: 1.1667;
+	letter-spacing: 0.03em;
+
+	@media screen and (min-width: $desktop-width) {
+		font-size: 26px;
+		line-height: 1.1923;
+	}
 }
 
 .logo__text {
-    color: $logo-color;
+	color: $logo-color;
 }
 
 .logo__text--inverse {
-    color: $hero-color;
+	color: $hero-color;
 }

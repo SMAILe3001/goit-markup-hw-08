@@ -1,29 +1,35 @@
+.section-work {
+	@media screen and (max-width: ($desktop-width - 1)) {
+		display: none;
+	}
+}
+
 .work-list {
-    display: flex;
-    margin-top: 50px;
-    gap: 30px;
+	display: flex;
+	margin-top: 50px;
+	gap: 30px;
 }
 
 .work-list__item {
-    flex-basis: calc((100% - 60px) / 3);
+	flex-basis: calc((100% - 60px) / 3);
 }
 
 .work-list__label {
-    position: relative;
+	position: relative;
 }
 
 .work-list__text {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: $label-text-background;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: $label-text-background;
 
-    font-size: 14px;
-    line-height: 1.1429;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+	font-size: 14px;
+	line-height: 1.1429;
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
 
-    color: $hero-color;
-    padding: 27px 0px;
+	color: $hero-color;
+	padding: 27px 0px;
 }

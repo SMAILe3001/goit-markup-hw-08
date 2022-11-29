@@ -1,60 +1,74 @@
-/* переважаючі характеристики сторінки */
+// переважаючі характеристики сторінки
 body {
-    background: $hero-color;
-    color: $title-text-color;
-    font-family: $fonts-first;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7143;
+	background: $hero-color;
+	color: $title-text-color;
+	font-family: $fonts-first;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.7143;
 }
 
-/* Видалення крапок списку */
+// Видалення крапок списку
 .list {
-    list-style: none;
+	list-style: none;
 
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
-/* видалення підкреслювання ссилок */
+// видалення підкреслювання ссилок
 .link {
-    text-decoration: none;
+	text-decoration: none;
 }
 
-/* Скриття елемента */
+// Скриття елемента
 .hidden {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
 }
 
-/* центрування і обмеження контенту */
+// центрування і обмеження контенту
 .container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 350px;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	@media screen and (min-width: $mobile-width) {
+		width: $mobile-width;
+	}
+
+	@media screen and (min-width: $table-width) {
+		width: $table-width;
+	}
+
+	@media screen and (min-width: $desktop-width) {
+		width: $desktop-width;
+	}
 }
 
-/* обнулення відступів */
+// обнулення відступів
 h1,
 h2,
 h3,
 h4,
 p {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
-/* видалення відступів картинок */
+// видалення відступів картинок
 img {
-    display: block;
+	display: block;
 }
+
+// видалення стандартних рамок у форм при фокусі
 
 input,
 textarea {
-    outline: none;
+	outline: none;
 }

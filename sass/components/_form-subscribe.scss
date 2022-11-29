@@ -1,31 +1,42 @@
 .form-subscribe {
-    display: flex;
-}
+	@media screen and (max-width: ($table-width - 1)) {
+		text-align: center;
+	}
 
-.form-subscribe__label {
-    display: flex;
+	@media screen and (min-width: $desktop-width) {
+		display: flex;
+	}
 }
 
 .form-subscribe__input {
-    width: 358px;
-    margin-right: 12px;
-    padding: 0px 16px;
-    background-color: transparent;
-    border-radius: 4px;
-    border: 1px solid $subscribe-input-border;
+	width: 450px;
+	height: 50px;
+	padding: 0px 16px;
+	background-color: transparent;
+	border-radius: 4px;
+	border: 1px solid $subscribe-input-border;
 
-    font-size: 16px;
-    line-height: 1.25;
-    color: $hero-color;
+	font-size: 16px;
+	line-height: 1.25;
+	color: $hero-color;
 
-    transition: border 250ms $timing-animation;
+	transition: border 250ms $timing-animation;
 
-    &::placeholder {
-        color: $contact-color;
-    }
+	&::placeholder {
+		color: $contact-color;
+	}
 
-    &:hover,
-    &:focus {
-        border: 1px solid $accent-color;
-    }
+	&:hover,
+	&:focus {
+		border: 1px solid $accent-color;
+	}
+
+	@media screen and (max-width: ($desktop-width - 1)) {
+		margin-bottom: 20px;
+	}
+
+	@media screen and (min-width: $desktop-width) {
+		width: 358px;
+		margin-right: 12px;
+	}
 }
