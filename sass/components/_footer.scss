@@ -5,23 +5,19 @@
 }
 
 .footer-container {
-	
-
 	@media screen and (max-width: ($table-width - 1)) {
 		text-align: center;
-		padding-bottom: 60px;
 	}
 
-
-		@media screen and (min-width: $table-width) {
-			display: flex;
-		}
+	@media screen and (min-width: $table-width) {
+		display: flex;
+	}
 
 	@media screen and (max-width: ($desktop-width - 1)) {
-		
 		justify-content: space-around;
 		flex-wrap: wrap;
 		text-align: center;
+		row-gap: 60px;
 	}
 
 	@media screen and (min-width: $desktop-width) {
