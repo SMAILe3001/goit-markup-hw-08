@@ -55,4 +55,7 @@
 
 .adress-nav__icon {
 	margin-right: 10px;
+	@media screen and (max-width: ($table-width - 1)) {
+			display: none;
+		}
 }
