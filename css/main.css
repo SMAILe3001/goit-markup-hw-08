@@ -299,6 +299,11 @@ textarea {
 .adress-nav__icon {
   margin-right: 10px;
 }
+@media screen and (max-width: 767px) {
+  .adress-nav__icon {
+    display: none;
+  }
+}
 
 .hero {
   background-color: #2f303a;
