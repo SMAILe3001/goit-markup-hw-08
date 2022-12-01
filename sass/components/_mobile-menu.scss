@@ -28,13 +28,13 @@
 	border: 0px;
 	z-index: 1;
 
-	@media screen and (min-width: $table-width) {
-		display: none;
-	}
-	transition: color 250ms $timing-animation;
-	&:hover {
-		color: $accent-color;
-	}
+	// @media screen and (min-width: $table-width) {
+	// 	display: none;
+	// }
+	// transition: color 250ms $timing-animation;
+	// &:hover {
+	// 	color: $accent-color;
+	// }
 }
 
 .menu-buttun__icon {

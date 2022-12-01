@@ -3,19 +3,11 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 30px;
-	margin-top: 30px;
-
-	@media screen and (min-width: $desktop-width) {
-		margin-top: 50px;
-	}
 }
 
 .client-list__link {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 210px;
-	height: 92px;
+	display: block;
+	padding: 14px 50px;
 	border: 1px solid $social-icon;
 	border-radius: 4px;
 	color: $social-icon;
@@ -30,13 +22,13 @@
 		border: 1px solid $accent-color;
 	}
 
-	@media screen and (min-width: $table-width) {
-		width: 226px;
-	}
+	// @media screen and (min-width: $table-width) {
+	// 	padding: 14px 58px;
+	// }
 
-	@media screen and (min-width: $desktop-width) {
-		width: 170px;
-	}
+	// @media screen and (min-width: $desktop-width) {
+	// 	padding: 14px 30px;
+	// }
 }
 
 .client-list__icon {

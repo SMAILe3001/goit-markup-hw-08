@@ -3,10 +3,12 @@
 	color: $hero-color;
 	background: $accent-color;
 	cursor: pointer;
+
 	font-weight: 700;
 	font-size: 16px;
-	line-height: 1.875;
+	line-height: calc(30 / 16);
 	letter-spacing: 0.06em;
+
 	padding: 10px 24px;
 	border: 0px;
 	border-radius: 4px;
@@ -32,5 +34,5 @@
 
 .button__icon {
 	margin-left: 10px;
-	fill: $hero-color;
+	fill: currentColor;
 }

@@ -5,11 +5,19 @@
 
 .address__list {
 	display: flex;
-	gap: 9px;
+	gap: 8px;
 	flex-direction: column;
+
+	// @media screen and (min-width: $table-width) {
+	// 	gap: 9px;
+	// }
 }
 
 .address__link {
+	font-size: 14px;
+	line-height: calc(24 / 14);
+	letter-spacing: 0.03em;
+
 	color: $contact-color;
 
 	transition-property: color;

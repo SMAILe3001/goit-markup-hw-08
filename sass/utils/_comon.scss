@@ -3,9 +3,9 @@ body {
 	background: $hero-color;
 	color: $title-text-color;
 	font-family: $fonts-first;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 1.7143;
+	// font-weight: 400;
+	// font-size: 14px;
+	// line-height: calc(24 / 14);
 }
 
 // Видалення крапок списку
@@ -34,7 +34,7 @@ body {
 .container {
 	margin-left: auto;
 	margin-right: auto;
-	min-width: 350px;
+	min-width: 250px;
 	padding-left: 15px;
 	padding-right: 15px;
 
@@ -62,12 +62,13 @@ p {
 }
 
 // видалення відступів картинок
-img {
+img,
+svg {
 	display: block;
+	max-width: 100%;
 }
 
 // видалення стандартних рамок у форм при фокусі
-
 input,
 textarea {
 	outline: none;

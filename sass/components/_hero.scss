@@ -8,28 +8,28 @@
 	padding-top: 118px;
 	padding-bottom: 118px;
 
-	@media screen and (min-width: $desktop-width) {
-		padding-top: 200px;
-		padding-bottom: 200px;
-		background-size: 1600px;
-	}
+	// @media screen and (min-width: $desktop-width) {
+	// 	padding-top: 200px;
+	// 	padding-bottom: 200px;
+	// 	background-size: 1600px;
+	// }
 }
 
 .hero__title {
 	color: $hero-color;
-	width: 360px;
+	// width: 100%;
 	font-weight: 900;
 	font-size: 26px;
-	line-height: 1.6154;
+	line-height: calc(42 / 26);
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
-	margin-left: auto;
-	margin-right: auto;
+	// margin-left: auto;
+	// margin-right: auto;
 	margin-bottom: 30px;
 
-	@media screen and (min-width: $desktop-width) {
-		width: 696px;
-		font-size: 44px;
-		line-height: 1.3636;
-	}
+	// @media screen and (min-width: $desktop-width) {
+	// 	width: 696px;
+	// 	font-size: 44px;
+	// 	line-height: 1.3636;
+	// }
 }

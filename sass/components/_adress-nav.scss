@@ -6,18 +6,18 @@
 				gap: 32px;
 	}
 
-	@media screen and (min-width: $table-width) {
-		display: flex;
-		flex-direction: column;
-		margin-left: auto;
-		gap: 10px;
-	}
+// 	@media screen and (min-width: $table-width) {
+// 		display: flex;
+// 		flex-direction: column;
+// 		margin-left: auto;
+// 		gap: 10px;
+// 	}
 
-	@media screen and (min-width: $desktop-width) {
-		flex-direction: row;
-		align-items: center;
-		gap: 50px;
-	}
+// 	@media screen and (min-width: $desktop-width) {
+// 		flex-direction: row;
+// 		align-items: center;
+// 		gap: 50px;
+// 	}
 }
 
 .adress-nav__link {

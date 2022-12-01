@@ -2,46 +2,35 @@
 	color: $primary-text-color;
 
 	font-size: 28px;
-	line-height: 1.1786;
+	line-height: calc(33 / 28);
 	text-align: center;
 	letter-spacing: 0.03em;
 
-	@media screen and (min-width: $desktop-width) {
-		font-size: 36px;
-		line-height: 1.1667;
-	}
+	margin-bottom: 30px;
+
+	// @media screen and (min-width: $desktop-width) {
+	// 	font-size: 36px;
+	// 	line-height: 1.1667;
+	// margin-bottom: 50px;
+	// }
 }
 
 .section--indent-top {
 	padding-top: 60px;
 
-	@media screen and (min-width: $desktop-width) {
-		.section--indent-top {
-			padding-top: 94px;
-		}
-	}
+	// @media screen and (min-width: $desktop-width) {
+	// 	padding-top: 94px;
+	// }
 }
 
 .section--indent-botton {
 	padding-bottom: 60px;
 
-	@media screen and (min-width: $desktop-width) {
-		.section--indent-botton {
-			padding-bottom: 94px;
-		}
-	}
+	// @media screen and (min-width: $desktop-width) {
+	// 	padding-bottom: 94px;
+	// }
 }
 
 .section--bagraund {
 	background: $portfolio-button;
-}
-
-@media screen and (min-width: $desktop-width) {
-	.section--indent-top {
-		padding-top: 94px;
-	}
-
-	.section--indent-botton {
-		padding-bottom: 94px;
-	}
 }

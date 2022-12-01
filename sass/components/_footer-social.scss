@@ -1,11 +1,12 @@
 .footer-social {
 	@media screen and (max-width: ($table-width - 1)) {
 		padding-bottom: 60px;
+		text-align: center;
 	}
 
-	@media screen and (min-width: $desktop-width) {
-		margin-left: 70px;
-	}
+	// @media screen and (min-width: $desktop-width) {
+	// 	margin-left: 70px;
+	// }
 }
 
 .footer-social__title {
@@ -16,10 +17,6 @@
 	text-transform: uppercase;
 
 	color: $hero-color;
-
-	@media screen and (max-width: ($table-width - 1)) {
-		text-align: center;
-	}
 }
 
 .footer-social__link {
