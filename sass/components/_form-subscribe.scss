@@ -1,8 +1,8 @@
-// .form-subscribe {
-// @media screen and (min-width: $desktop-width) {
-// 	display: flex;
-// }
-// }
+.form-subscribe {
+	@media screen and (min-width: $desktop-width) {
+		display: flex;
+	}
+}
 
 .form-subscribe__input {
 	width: 100%;
@@ -27,16 +27,12 @@
 		border: 1px solid $accent-color;
 	}
 
-	// @media screen and (min-width: $table-width) {
-	// 	width: 450px;
-	// }
-
 	@media screen and (max-width: ($desktop-width - 1)) {
 		margin-bottom: 20px;
 	}
 
-	// @media screen and (min-width: $desktop-width) {
-	// 	width: 358px;
-	// 	margin-right: 12px;
-	// }
+	@media screen and (min-width: $desktop-width) {
+		width: 358px;
+		margin-right: 12px;
+	}
 }

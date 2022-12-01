@@ -11,10 +11,10 @@
 		padding-bottom: 16px;
 	}
 
-	// @media screen and (min-width: $desktop-width) {
-	// 	font-size: 26px;
-	// 	line-height: 1.1923;
-	// }
+	@media screen and (min-width: $desktop-width) {
+		font-size: 26px;
+		line-height: calc(31 / 26);
+	}
 }
 
 .logo__text {

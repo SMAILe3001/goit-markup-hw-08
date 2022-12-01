@@ -1,15 +1,8 @@
 .header-nav {
-	position: relative;
 	display: flex;
+	position: relative;
 	align-items: center;
 }
-
-// .site-nav {
-// 	// @media screen and (min-width: $table-width) {
-// 	// 	display: flex;
-// 	// 	margin-left: 93px;
-// 	// }
-// }
 
 .site-nav__list {
 	display: flex;
@@ -27,8 +20,8 @@
 	color: $primary-text-color;
 
 	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.1429;
+	font-size: 40px;
+	line-height: calc(47 / 40);
 	letter-spacing: 0.02em;
 
 	transition: color 250ms $timing-animation;
@@ -38,32 +31,29 @@
 		color: $accent-color;
 	}
 
-	// @media screen and (min-width: $table-width) {
-	// 	padding-top: 32px;
-	// 	padding-bottom: 32px;
-	// }
-
-	@media screen and (max-width: ($table-width - 1)) {
-		font-size: 40px;
-		line-height: calc(47 / 40);
+	@media screen and (min-width: $table-width) {
+		padding-top: 32px;
+		padding-bottom: 32px;
+		font-size: 14px;
+		line-height: calc(16 / 14);
 	}
 }
 
 .site-nav__link--current {
 	color: $accent-color;
 
-	// @media screen and (min-width: $table-width) {
-	// 	position: relative;
+	@media screen and (min-width: $table-width) {
+		position: relative;
 
-	// 	&::after {
-	// 		content: "";
-	// 		position: absolute;
-	// 		width: 100%;
-	// 		height: 4px;
-	// 		background-color: $accent-color;
-	// 		bottom: -1px;
-	// 		left: 0px;
-	// 		border-radius: 2px;
-	// 	}
-	// }
+		&::after {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 4px;
+			background-color: $accent-color;
+			bottom: -1px;
+			left: 0px;
+			border-radius: 2px;
+		}
+	}
 }

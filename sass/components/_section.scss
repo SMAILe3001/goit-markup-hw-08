@@ -8,27 +8,27 @@
 
 	margin-bottom: 30px;
 
-	// @media screen and (min-width: $desktop-width) {
-	// 	font-size: 36px;
-	// 	line-height: 1.1667;
-	// margin-bottom: 50px;
-	// }
+	@media screen and (min-width: $desktop-width) {
+		font-size: 36px;
+		line-height: calc(42 / 36);
+		margin-bottom: 50px;
+	}
 }
 
 .section--indent-top {
 	padding-top: 60px;
 
-	// @media screen and (min-width: $desktop-width) {
-	// 	padding-top: 94px;
-	// }
+	@media screen and (min-width: $desktop-width) {
+		padding-top: 94px;
+	}
 }
 
 .section--indent-botton {
 	padding-bottom: 60px;
 
-	// @media screen and (min-width: $desktop-width) {
-	// 	padding-bottom: 94px;
-	// }
+	@media screen and (min-width: $desktop-width) {
+		padding-bottom: 94px;
+	}
 }
 
 .section--bagraund {

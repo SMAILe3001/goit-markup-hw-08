@@ -22,13 +22,13 @@
 		border: 1px solid $accent-color;
 	}
 
-	// @media screen and (min-width: $table-width) {
-	// 	padding: 14px 58px;
-	// }
+	@media screen and (min-width: $table-width) {
+		padding: 14px 58px;
+	}
 
-	// @media screen and (min-width: $desktop-width) {
-	// 	padding: 14px 30px;
-	// }
+	@media screen and (min-width: $desktop-width) {
+		padding: 14px 30px;
+	}
 }
 
 .client-list__icon {

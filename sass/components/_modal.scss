@@ -26,6 +26,11 @@
 	transform: translate(-50%, -50%) scale(1) perspective(400px) rotateX(0deg);
 	transition: transform 250ms $timing-animation, visibility 250ms $timing-animation;
 
+	@media screen and (max-width: $mobile-width) {
+		width: 100%;
+		margin: 15px;
+	}
+
 	// @media screen and (min-width: $desktop-width) {
 	// 	width: 528px;
 	// }
