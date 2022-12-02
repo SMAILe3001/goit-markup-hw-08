@@ -84,7 +84,7 @@
 	border-left: 1px solid $textarea-border;
 }
 
-@media screen and (max-width: $table-width) and (min-width: 454px) {
+@media screen and (max-width: ($table-width - 1)) and (min-width: 454px) {
 	.header__item:nth-child(1) {
 		border-left: none;
 	}

@@ -29,7 +29,7 @@
 	transform: scale(1) perspective(400px) rotateX(0deg);
 	transition: transform 250ms $timing-animation, visibility 250ms $timing-animation;
 
-	@media screen and (max-width: $mobile-width) {
+	@media screen and (max-width: ($mobile-width - 1)) {
 		width: 100%;
 		margin: 15px;
 		margin-top: auto;
