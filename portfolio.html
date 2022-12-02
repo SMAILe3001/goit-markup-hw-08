@@ -22,14 +22,18 @@
 		<!-- Шапка сайта -->
 		<header class="header">
 			<div class="container header-nav">
+				<a href="./index.html" class="logo link">Web<span class="logo__text">Studio</span></a>
 				<button type="button" class="menu-buttun js-open-menu">
 					<svg class="menu-buttun__icon" width="40" height="40" aria-label="Перемикач мобільного меню">
-						<use class="menu-buttun__icon--cross" href="./images/svg-icon.svg#icon-menu-close"></use>
 						<use class="menu-buttun__icon--menu" href="./images/svg-icon.svg#icon-menu-open"></use>
 					</svg>
 				</button>
-				<a href="./index.html" class="logo link">Web<span class="logo__text">Studio</span></a>
 				<div class="mobile-menu js-menu-container">
+					<button type="button" class="menu-buttun js-close-menu">
+						<svg class="menu-buttun__icon" width="40" height="40" aria-label="Перемикач мобільного меню">
+							<use class="menu-buttun__icon--cross" href="./images/svg-icon.svg#icon-menu-close"></use>
+						</svg>
+					</button>
 					<nav class="site-nav">
 						<ul class="site-nav__list list">
 							<li class="site-nav__item">
@@ -307,12 +311,12 @@
 				</div>
 			</div>
 		</footer>
-		<!-- <script
+		<script
 			defer
 			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
 			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
 			crossorigin="anonymous"
-		></script> -->
+		></script>
 		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>

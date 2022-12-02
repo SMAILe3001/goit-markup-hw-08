@@ -1288,7 +1288,7 @@ textarea {
   padding: 0px;
   background-color: #ffffff;
   border: 0px;
-  z-index: 9;
+  z-index: 5;
   cursor: pointer;
 }
 @media screen and (min-width: 768px) {
@@ -1306,17 +1306,13 @@ textarea {
   fill: currentColor;
 }
 
-.menu-buttun .menu-buttun__icon--cross {
-  display: none;
+.js-close-menu {
+  z-index: 25;
+  top: 30px;
 }
 
-.menu-buttun__icon.is-open .menu-buttun__icon--cross,
 .mobile-menu.is-open {
   display: block;
-}
-
-.menu-buttun__icon.is-open .menu-buttun__icon--menu {
-  display: none;
 }
 
 .header__social {
