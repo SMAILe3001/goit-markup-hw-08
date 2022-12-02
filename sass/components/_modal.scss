@@ -9,21 +9,24 @@
 
 	opacity: 1;
 	transition: opacity 250ms $timing-animation;
+
+	display: flex;
+	flex-wrap: wrap;
+	overflow: auto;
 }
 
 .modal__window {
-	position: absolute;
+	position: relative;
 	width: 450px;
 	min-height: 581px;
-	top: 50%;
-	left: 50%;
+	margin: auto;
 	padding: 40px 40px;
 
 	background: $hero-color;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
 
-	transform: translate(-50%, -50%) scale(1) perspective(400px) rotateX(0deg);
+	transform: scale(1) perspective(400px) rotateX(0deg);
 	transition: transform 250ms $timing-animation, visibility 250ms $timing-animation;
 
 	@media screen and (max-width: $mobile-width) {
@@ -31,13 +34,13 @@
 		margin: 15px;
 	}
 
-	// @media screen and (min-width: $desktop-width) {
-	// 	width: 528px;
-	// }
+	@media screen and (min-width: $desktop-width) {
+		width: 528px;
+	}
 }
 
 .modal.is-hidden .modal__window {
-	transform: translate(-50%, -50%) scale(0.3) perspective(400px) rotateX(60deg);
+	transform: scale(0.3) perspective(400px) rotateX(60deg);
 }
 
 .modal__title {
@@ -49,9 +52,9 @@
 
 	color: $primary-text-color;
 
-	// @media screen and (min-width: $desktop-width) {
-	// 	line-height: 1.15;
-	// }
+	@media screen and (min-width: $desktop-width) {
+		line-height: 1.15;
+	}
 }
 
 .button-modal-close {

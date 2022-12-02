@@ -3,7 +3,7 @@
 		text-align: center;
 	}
 
-	@media screen and (max-width: ($desktop-width - 1)) {
+	@media screen and (min-width: $table-width) {
 		width: 450px;
 	}
 

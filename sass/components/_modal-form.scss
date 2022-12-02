@@ -105,9 +105,9 @@
 		align-items: left;
 	}
 
-	// @media screen and (min-width: $desktop-width) {
-	// 	justify-content: center;
-	// }
+	@media screen and (min-width: $desktop-width) {
+		justify-content: center;
+	}
 
 	&::before {
 		content: "";

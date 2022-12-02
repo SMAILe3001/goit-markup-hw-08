@@ -384,21 +384,26 @@ textarea {
   opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: auto;
 }
 
 .modal__window {
-  position: absolute;
+  position: relative;
   width: 450px;
   min-height: 581px;
-  top: 50%;
-  left: 50%;
+  margin: auto;
   padding: 40px 40px;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  -webkit-transform: translate(-50%, -50%) scale(1) perspective(400px) rotateX(0deg);
-          transform: translate(-50%, -50%) scale(1) perspective(400px) rotateX(0deg);
+  -webkit-transform: scale(1) perspective(400px) rotateX(0deg);
+          transform: scale(1) perspective(400px) rotateX(0deg);
   -webkit-transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -410,10 +415,15 @@ textarea {
     margin: 15px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .modal__window {
+    width: 528px;
+  }
+}
 
 .modal.is-hidden .modal__window {
-  -webkit-transform: translate(-50%, -50%) scale(0.3) perspective(400px) rotateX(60deg);
-          transform: translate(-50%, -50%) scale(0.3) perspective(400px) rotateX(60deg);
+  -webkit-transform: scale(0.3) perspective(400px) rotateX(60deg);
+          transform: scale(0.3) perspective(400px) rotateX(60deg);
 }
 
 .modal__title {
@@ -423,6 +433,11 @@ textarea {
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+  }
 }
 
 .button-modal-close {
@@ -580,6 +595,13 @@ textarea {
     -webkit-box-align: left;
         -ms-flex-align: left;
             align-items: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-checkbox__text {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .modal-checkbox__text::before {
@@ -993,7 +1015,7 @@ textarea {
     text-align: center;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .footer-subscribe {
     width: 450px;
   }
