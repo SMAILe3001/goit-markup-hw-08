@@ -4,7 +4,10 @@
 	width: 100%;
 
 	@media screen and (max-width: ($table-width - 1)) {
-		display: none;
+		visibility: hidden;
+		opacity: 0;
+		pointer-events: none;
+		// display: none;
 		position: absolute;
 		top: 0px;
 		left: 0;
@@ -16,6 +19,7 @@
 		background-color: $hero-color;
 		padding: 48px 40px;
 		z-index: 8;
+		overflow-y: scroll;
 	}
 
 	@media screen and (min-width: $table-width) {
@@ -55,8 +59,10 @@
 	top: 30px;
 }
 
-.mobile-menu.is-open {
-	display: block;
+.is-open {
+	visibility: visible;
+	opacity: 1;
+	pointer-events: auto;
 }
 
 .header__social {
@@ -95,4 +101,19 @@
 	letter-spacing: 0.02em;
 
 	color: $accent-color;
+}
+
+.mobile-menu {
+	@media screen and (max-width: ($table-width - 1)) {
+		transform: translate(45%, -47%) scale(0);
+		transition-property: transform, visibility, opacity;
+		transition-duration: 250ms;
+		transition-timing-function: $timing-animation;
+	}
+}
+
+.mobile-menu.is-open {
+	@media screen and (max-width: ($table-width - 1)) {
+		transform: translate(0, 0) scale(1);
+	}
 }

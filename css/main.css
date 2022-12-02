@@ -413,6 +413,8 @@ textarea {
   .modal__window {
     width: 100%;
     margin: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1250,7 +1252,9 @@ textarea {
 }
 @media screen and (max-width: 767px) {
   .mobile-menu {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
     position: absolute;
     top: 0px;
     left: 0;
@@ -1267,6 +1271,7 @@ textarea {
     background-color: #ffffff;
     padding: 48px 40px;
     z-index: 8;
+    overflow-y: scroll;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1311,8 +1316,10 @@ textarea {
   top: 30px;
 }
 
-.mobile-menu.is-open {
-  display: block;
+.is-open {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .header__social {
@@ -1354,4 +1361,26 @@ textarea {
   line-height: 1.2222222222;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-menu {
+    -webkit-transform: translate(45%, -47%) scale(0);
+            transform: translate(45%, -47%) scale(0);
+    -webkit-transition-property: visibility, opacity, -webkit-transform;
+    transition-property: visibility, opacity, -webkit-transform;
+    transition-property: transform, visibility, opacity;
+    transition-property: transform, visibility, opacity, -webkit-transform;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-menu.is-open {
+    -webkit-transform: translate(0, 0) scale(1);
+            transform: translate(0, 0) scale(1);
+  }
 }/*# sourceMappingURL=main.css.map */
