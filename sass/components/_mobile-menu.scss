@@ -7,7 +7,6 @@
 		visibility: hidden;
 		opacity: 0;
 		pointer-events: none;
-		// display: none;
 		position: absolute;
 		top: 0px;
 		left: 0;
@@ -95,10 +94,7 @@
 }
 
 .header__link {
-	font-weight: 500;
-	font-size: 18px;
-	line-height: calc(22 / 18);
-	letter-spacing: 0.02em;
+	@include font(500, 18px, 22px, 0.02em);
 
 	color: $accent-color;
 }

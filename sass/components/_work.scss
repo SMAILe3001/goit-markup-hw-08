@@ -24,10 +24,8 @@
 	width: 100%;
 	background-color: $label-text-background;
 
-	font-size: 14px;
-	line-height: 1.1429;
+	@include font(null, 14px, 16px, 0.03em);
 	text-align: center;
-	letter-spacing: 0.03em;
 	text-transform: uppercase;
 
 	color: $hero-color;

@@ -5,10 +5,7 @@
 
 .modal-form__name {
 	display: block;
-	font-weight: 400;
-	font-size: 12px;
-	line-height: 1.1667;
-	letter-spacing: 0.01em;
+	@include font(400, 12px, 14px, 0.01em);
 	color: $title-text-color;
 	text-align: left;
 	margin-bottom: 4px;
@@ -65,9 +62,7 @@
 	border-radius: 4px;
 	transition: border 250ms $timing-animation;
 
-	font-size: 12px;
-	line-height: 1.1667;
-	letter-spacing: 0.01em;
+	@include font(null, 12px, 14px, 0.01em);
 
 	&::placeholder {
 		color: $textarea-placeholder;
@@ -97,14 +92,10 @@
 	display: flex;
 	align-items: center;
 
-	font-weight: 400;
-	font-size: 14px;
-	line-height: calc(24 / 14);
-	letter-spacing: 0.03em;
+	@include font(400, 14px, 24px, 0.03em);
 
 	@media screen and (max-width: ($desktop-width - 1 )) {
-		font-size: 12px;
-		line-height: calc(14 / 12);
+		@include font(null, 12px, 14px, null);
 		align-items: left;
 	}
 

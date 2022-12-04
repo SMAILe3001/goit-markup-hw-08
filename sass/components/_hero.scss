@@ -54,10 +54,7 @@
 
 .hero__title {
 	color: $hero-color;
-	font-weight: 900;
-	font-size: 26px;
-	line-height: calc(42 / 26);
-	letter-spacing: 0.06em;
+	@include font(900, 26px, 42px, 0.06em);
 	text-transform: uppercase;
 	margin-bottom: 30px;
 
@@ -69,7 +66,6 @@
 
 	@media screen and (min-width: $desktop-width) {
 		max-width: 696px;
-		font-size: 44px;
-		line-height: calc(60 / 44);
+		@include font(null, 44px, 60px, null);
 	}
 }

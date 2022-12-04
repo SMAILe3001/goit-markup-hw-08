@@ -14,9 +14,7 @@
 
 .footer-subscribe__title {
 	margin-bottom: 20px;
-	font-size: 14px;
-	line-height: calc(16 / 14);
-	letter-spacing: 0.03em;
+	@include font(null, 14px, 16px, 0.03em);
 	text-transform: uppercase;
 
 	color: $hero-color;

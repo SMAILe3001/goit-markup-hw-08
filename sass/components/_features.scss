@@ -37,9 +37,7 @@
 	color: $primary-text-color;
 	margin-bottom: 10px;
 
-	font-size: 14px;
-	line-height: calc(16 / 14);
-	letter-spacing: 0.03em;
+	@include font(null, 14px, 16px, 0.03em);
 	text-transform: uppercase;
 
 	@media screen and (max-width: ($table-width - 1)) {
@@ -48,8 +46,5 @@
 }
 
 .feature-list__text {
-	font-weight: 400;
-	font-size: 14px;
-	line-height: calc(24 / 14);
-	letter-spacing: 0.03em;
+	@include font(400, 14px, 24px, 0.03em);
 }
