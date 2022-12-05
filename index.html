@@ -164,14 +164,23 @@
 						</li>
 						<li class="work-list__item">
 							<div class="work-list__label">
-								<img
-									class="work-list__img"
-									src="./images/desktop/mobile.jpg"
-									srcset="./images/desktop/mobile@2x.jpg 2x, ./images/desktop/mobile@3x.jpg 3x"
-									alt="Робочий стіл з телефоном і ноутбуком"
-									width="370"
-									height="294"
-								/>
+								<picture>
+									<source
+										media="(min-width: 1200px)"
+										srcset="
+											./images/desktop/mobile.jpg,
+											./images/desktop/mobile@2x.jpg 2x,
+											./images/desktop/mobile@3x.jpg 3x
+										"
+									/>
+									<img
+										class="work-list__img"
+										src="./images/desktop/mobile.jpg"
+										alt="Робочий стіл з телефоном і ноутбуком"
+										width="370"
+										height="294"
+									/>
+								</picture>
 								<div class="work-list__text">
 									<h3>Мобільні додатки</h3>
 								</div>
@@ -179,14 +188,23 @@
 						</li>
 						<li class="work-list__item">
 							<div class="work-list__label">
-								<img
-									class="work-list__img"
-									src="./images/desktop/desing.jpg"
-									srcset="./images/desktop/desing@2x.jpg 2x, ./images/desktop/desing@3x.jpg 3x"
-									alt="Робочий стіл з планшетом і монітором"
-									width="370"
-									height="294"
-								/>
+								<picture>
+									<source
+										media="(min-width: 1200px)"
+										srcset="
+											./images/desktop/desing.jpg,
+											./images/desktop/desing@2x.jpg 2x,
+											./images/desktop/desing@3x.jpg 3x
+										"
+									/>
+									<img
+										class="work-list__img"
+										src="./images/desktop/desing.jpg"
+										alt="Робочий стіл з планшетом і монітором"
+										width="370"
+										height="294"
+									/>
+								</picture>
 								<div class="work-list__text">
 									<h3>Дизайнерські рішення</h3>
 								</div>
