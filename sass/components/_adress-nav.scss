@@ -4,7 +4,7 @@
 	gap: 32px;
 
 	@media screen and (max-width: ($table-width - 1)) {
-		margin-top: 302px;
+		margin-top: auto;
 	}
 
 	@media screen and (min-width: $table-width) {

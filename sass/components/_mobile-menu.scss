@@ -18,7 +18,7 @@
 		background-color: $hero-color;
 		padding: 48px 40px;
 		z-index: 8;
-		overflow-y: scroll;
+		height: 100vh;
 	}
 
 	@media screen and (min-width: $table-width) {

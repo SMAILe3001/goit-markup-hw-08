@@ -214,7 +214,7 @@ textarea {
 }
 @media screen and (max-width: 767px) {
   .adress-nav {
-    margin-top: 302px;
+    margin-top: auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -296,7 +296,7 @@ textarea {
   background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hero-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 480px 400px;
+  background-size: cover;
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
@@ -320,7 +320,6 @@ textarea {
   .hero {
     background-image: -webkit-gradient(linear, right top, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablet/hero-table.jpg);
     background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero-table.jpg);
-    background-size: 768px 400px;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -1316,7 +1315,7 @@ textarea {
     background-color: #ffffff;
     padding: 48px 40px;
     z-index: 8;
-    overflow-y: scroll;
+    height: 100vh;
   }
 }
 @media screen and (min-width: 768px) {
